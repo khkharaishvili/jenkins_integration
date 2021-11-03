@@ -1244,7 +1244,7 @@ declare namespace m='http://www.oorsprong.org/websamples.countryinfo';
 
 &lt;Result>
 {
-for$x in //m:tCountryCodeAndName
+$x in //m:tCountryCodeAndName
 where starts-with($x/m:sName/text(),'G')
 return &lt;name>{$x/m:sName/text()}&lt;/name>
 }
